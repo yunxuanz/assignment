@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+
+}
+
+.topnav a {
+  float: left;
+  display: white;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid maroon;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid maroon;
+}
+</style>
+</head>
+
+<div class="topnav">
+  <a class="active" href="home.html">HOME</a>
+        <a href="classes.html">CLASSES</a>
+        <a href="people.html">PEOPLE</a>
+        <a href="membership.html">MEMBERSHIP</a>
+        <a href="contact.html">CONTACT</a>
+</div>
+
+
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="gymimage/classestop.jpg" alt="header image" style="width:100%;">
+
+  <div class="centered" style="font-size: 40px">Classes</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+<body style="background-color:rgb(242, 242, 242)">
+<div style="padding-left:16px; font-family: Georgia, serif">
+  <p style="color:black; text-align: center">
+    Diet fads come and go, sometimes the best way is keeping it real and hit the gym. Hard work forever pays.
+    <br>
+    But with our personal trainers at the gym, we make sure you work smart too.
+    <br>
+    Set goals and follow a plan to get there.
+    <br>
+    Be it for weight loss or muscle gains, TouchBASE has all the necessary equipment to get you there!
+    <br>
+    Work out smart and within a close community of gym-goers that motivates and drives each other to be better!
+  <br>
+  <i style= "color:#d4af37">Go Ahead. Commit to Change.</i></p>
+</div>
+
+<h2 style="text-align: center; color: maroon">Which kind of health are you?</h2>
+
+
+
+
+
+
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.sweat {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img src="gymimage/sweat.jpg" alt="sweat" style="width:100%;">
+
+  <div class="sweat"; style="text-align:justify">SWEAT
+  <br>
+  Movement is a gift, and our SWEAT classes allow you to get straight in on the action.
+  SWEAT is High Intensity Interval Training (HIIT) at its finest, and as the name suggests, bring a change of clothes.
+  SWEAT classes are circuit style classes involving light weights and bodyweight movements in a HIIT format.
+  SWEAT classes are 45 minutes long, and is open to all levels.
+
+
+</div>
+</div>
+
+<style>
+.collapsibles {
+  background-color: #660000;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsibles:hover {
+  border-bottom: 3px solid white;
+}
+
+.contents {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-family: Trebuchet MS;
+}
+</style>
+</head>
+<body>
+
+<button type="button" class="collapsibles">SWEAT SCHEDULE +</button>
+<div class="contents">
+  <p>Monday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+1pm – George Tyen, 14 Raffles<br>
+5pm – George Tyen, 14 Tanjong Pagar<br>
+7pm – George Tyen, 137 Telok Ayer<br>
+<br>
+Tuesday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+730pm – George Tyen, 137 Raffles<br>
+<br>
+Wednesday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+1pm – George Tyen, 14 Robinson<br>
+3:30pm – George Tyen, 14 Robinson<br>
+<br>
+Thursday:<br>
+1215pm – George Tyen, 14 Tanjong Pagar<br>
+<br>
+Friday:<br>
+8am – Jeff Chuang, 137 Telok Ayer<br>
+1215pm – George Tyen, 14 Robinson<br>
+630pm – George Tyen, 14 Robinson<br>
+<br>
+Saturday:<br>
+1115am – Sharlynn Ooi, 127 Tanjong Pagar<br>
+12pm – George Tyen, 14 Robinson<br>
+<br>
+Sunday:<br>
+9am – Erik Lane, 137 Tanjong Pagar</p>
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsibles");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.cut {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+
+
+
+<div class="container">
+  <img src="gymimage/cut.jpg" alt="cut" style="width:100%;">
+
+  <div class="cut"; style="text-align:justify">CUT
+  <br>
+  Focusing on dynamic movements, this is a technique-focused class that will help you understand the language of movement: Push, Pull, Hinge, Squat.
+
+  CUT classes are fundamental movement classes where we teach you how to move with classic gym equipment like barbells, dumbbells and kettlebells.
+
+  CUT classes are 45 minutes long, and is open to all levels.
+
+
+</div>
+</div>
+
+<style>
+.collapsible {
+  background-color: #660000;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  border-bottom: 3px solid white;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-family: Trebuchet MS;
+}
+</style>
+</head>
+<body>
+
+<button type="button" class="collapsible">CUT SCHEDULE +</button>
+<div class="content">
+  <p>Monday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+1pm – George Tyen, 14 Raffles<br>
+5pm – George Tyen, 14 Tanjong Pagar<br>
+7pm – George Tyen, 137 Telok Ayer<br>
+<br>
+Tuesday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+730pm – George Tyen, 137 Raffles<br>
+<br>
+Wednesday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+1pm – George Tyen, 14 Robinson<br>
+3:30pm – George Tyen, 14 Robinson<br>
+<br>
+Thursday:<br>
+1215pm – George Tyen, 14 Tanjong Pagar<br>
+<br>
+Friday:<br>
+8am – Jeff Chuang, 137 Telok Ayer<br>
+1215pm – George Tyen, 14 Robinson<br>
+630pm – George Tyen, 14 Robinson<br>
+<br>
+Saturday:<br>
+1115am – Sharlynn Ooi, 127 Tanjong Pagar<br>
+12pm – George Tyen, 14 Robinson<br>
+<br>
+Sunday:<br>
+9am – Erik Lane, 137 Tanjong Pagar</p>
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.build {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img src="gymimage/build.jpg" alt="build" style="width:100%;">
+
+  <div class="build"; style="text-align:justify">BUILD
+  <br>
+  Within a small group setting, BUILD increases the technical profeciency in the snatch and the clean and jerk.
+
+  Because of the progressive and personal nature these lifts, participants are expected to posess the fundementals of lifting.
+
+
+</div>
+</div>
+
+<style>
+.collapsiblebuild {
+  background-color: #660000;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsiblebuild:hover {
+  border-bottom: 3px solid white;
+}
+
+.contentbuild {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-family: Trebuchet MS;
+}
+</style>
+</head>
+<body>
+
+<button type="button" class="collapsiblebuild">BUILD SCHEDULE +</button>
+<div class="contentbuild">
+  <p>Monday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+1pm – George Tyen, 14 Raffles<br>
+5pm – George Tyen, 14 Tanjong Pagar<br>
+7pm – George Tyen, 137 Telok Ayer<br>
+<br>
+Tuesday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+730pm – George Tyen, 137 Raffles<br>
+<br>
+Wednesday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+1pm – George Tyen, 14 Robinson<br>
+3:30pm – George Tyen, 14 Robinson<br>
+<br>
+Thursday:<br>
+1215pm – George Tyen, 14 Tanjong Pagar<br>
+<br>
+Friday:<br>
+8am – Jeff Chuang, 137 Telok Ayer<br>
+1215pm – George Tyen, 14 Robinson<br>
+630pm – George Tyen, 14 Robinson<br>
+<br>
+Saturday:<br>
+1115am – Sharlynn Ooi, 127 Tanjong Pagar<br>
+12pm – George Tyen, 14 Robinson<br>
+<br>
+Sunday:<br>
+9am – Erik Lane, 137 Tanjong Pagar</p>
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsiblebuild");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.reload {
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img src="gymimage/reload.jpg" alt="reload" style="width:100%;">
+
+  <div class="reload"; style="text-align:justify">RELOAD
+  <br>
+  For beginers to the gym or those coming back from a break, RELOAD integrates concepts, drills and games that makes a great (re)introduction to the gym steeing.
+  You can expect overall fitness gains as you learn how to build the necessary strength, flexibility and techniques to improve mobility and strength.
+
+
+</div>
+</div>
+
+<style>
+.collapsibleload {
+  background-color: #660000;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsibleload:hover {
+  background-color: maroon;
+}
+
+.contentload {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-family: Trebuchet MS;
+}
+</style>
+
+<body>
+
+
+
+
+<button type="button" class="collapsibleload">RELOAD Schedule +</button>
+<div class="contentload">
+  <p>Monday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+1pm – George Tyen, 14 Raffles<br>
+5pm – George Tyen, 14 Tanjong Pagar<br>
+7pm – George Tyen, 137 Telok Ayer<br>
+<br>
+Tuesday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+730pm – George Tyen, 137 Raffles<br>
+<br>
+Wednesday:<br>
+1215pm – George Tyen, 14 Robinson<br>
+1pm – George Tyen, 14 Robinson<br>
+3:30pm – George Tyen, 14 Robinson<br>
+<br>
+Thursday:<br>
+1215pm – George Tyen, 14 Tanjong Pagar<br>
+<br>
+Friday:<br>
+8am – Jeff Chuang, 137 Telok Ayer<br>
+1215pm – George Tyen, 14 Robinson<br>
+630pm – George Tyen, 14 Robinson<br>
+<br>
+Saturday:<br>
+1115am – Sharlynn Ooi, 127 Tanjong Pagar<br>
+12pm – George Tyen, 14 Robinson<br>
+<br>
+Sunday:<br>
+9am – Erik Lane, 137 Tanjong Pagar</p>
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsibleload");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
